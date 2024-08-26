@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sgepii-composite-application" />
+        <module name="sgdoc-composite-application" />
+        <module name="broker-saml-mappers" />
+        <module name="sgemp-composite-application" />
+        <module name="sgi-composite-application" />
+        <module name="sgo-composite-application" />
+        <module name="esb-composite-application" />
+        <module name="sge-composite-application" />
+        <module name="sgp-composite-application" />
+        <module name="sgi-auth-mediator" />
+      </profile>
+      <profile name="Annotation profile for sgi-usr-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/hibernate/hibernate-jpamodelgen/5.4.28.Final/hibernate-jpamodelgen-5.4.28.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar" />
+          <entry name="$MAVEN_REPOSITORY$/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-configuration-processor/2.3.9.RELEASE/spring-boot-configuration-processor-2.3.9.RELEASE.jar" />
+        </processorPath>
+        <module name="sgi-rep-service" />
+        <module name="sgi-rel-service" />
+        <module name="sgi-tp-service" />
+        <module name="sgi-prc-service" />
+        <module name="sgi-framework-spring" />
+        <module name="sgi-eer-service" />
+        <module name="sgi-com-service" />
+        <module name="sgi-eti-service" />
+        <module name="sgi-cnf-service" />
+        <module name="sgi-pii-service" />
+        <module name="sgi-csp-service" />
+        <module name="sgi-usr-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sgi-cnf-service" options="-parameters" />
+      <module name="sgi-com-service" options="-parameters" />
+      <module name="sgi-csp-service" options="-parameters" />
+      <module name="sgi-eer-service" options="-parameters" />
+      <module name="sgi-eti-service" options="-parameters" />
+      <module name="sgi-framework-spring" options="-parameters" />
+      <module name="sgi-pii-service" options="-parameters" />
+      <module name="sgi-prc-service" options="-parameters" />
+      <module name="sgi-rel-service" options="-parameters" />
+      <module name="sgi-rep-service" options="-parameters" />
+      <module name="sgi-tp-service" options="-parameters" />
+      <module name="sgi-usr-service" options="-parameters" />
+    </option>
+  </component>
+</project>

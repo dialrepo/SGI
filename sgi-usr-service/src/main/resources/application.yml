@@ -71,7 +71,7 @@ spring:
             scope: "openid,profile"
         provider:
           keycloak:
-            issuer-uri: http://sgi-auth:8080/auth/realms/sgi
+            issuer-uri: http://demo.hercules-sgi.local/auth/realms/sgi
             user-name-attribute: user_ref_id
       resourceserver:
         jwt:

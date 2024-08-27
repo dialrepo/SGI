@@ -9,7 +9,7 @@
     "logLevel": "debug"
   },
   "/api/csp": {
-    "target": "http://sgi-csp-service:4281",
+    "target": "http://localhost:4281",
     "pathRewrite": {
       "^/api/csp": ""
     },

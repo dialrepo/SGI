@@ -16,7 +16,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular-material-components/datetime-picker": "^5.1.0-sgi.0",
+    "@angular-material-components/datetime-picker": "file:../angular-material-components/angular-material-components-4.0.0.tgz",
     "@angular/animations": "~11.1.1",
     "@angular/cdk": "^11.1.1",
     "@angular/common": "~11.1.1",
@@ -36,6 +36,7 @@
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
     "@sgi/framework": "file:../sgi-framework-angular/dist/sgi/framework/sgi-framework-0.1.0.tgz",
+    "angular-material-components": "file:../angular-material-components/angular-material-components-4.0.0.tgz",
     "ckeditor5-custom-build": "file:ckeditor5",
     "fontsource-poppins": "^3.0.3",
     "keycloak-js": "11.0.0",

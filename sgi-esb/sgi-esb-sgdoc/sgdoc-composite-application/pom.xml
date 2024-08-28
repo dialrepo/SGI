@@ -50,7 +50,7 @@
     </repository>
     <repository>
       <id>wso2-maven2-repository-1</id>
-      <url>https://dist.wso2.org/maven2</url>
+      <url>http://dist.wso2.org/maven2</url>
     </repository>
     <repository>
       <id>wso2-nexus-repository-1</id>
@@ -69,7 +69,7 @@
     </pluginRepository>
     <pluginRepository>
       <id>wso2-maven2-repository-1</id>
-      <url>https://dist.wso2.org/maven2</url>
+      <url>http://dist.wso2.org/maven2</url>
     </pluginRepository>
     <pluginRepository>
       <id>wso2-nexus-repository-1</id>

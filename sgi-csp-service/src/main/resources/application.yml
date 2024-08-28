@@ -18,19 +18,19 @@ sgi:
       tp-url: "http://demo.hercules-sgi.local/sgi-tp-service:4285"
       sgemp-url: "http://demo.hercules-sgi.local/sgi-esb:8080/sgemp"
 
-     # sgi:
-        #  web-url: "http://sgi.crue.com"
-        #time-zone: "Europe/Madrid"
-        #rest:
-        #  api:
-        #    cnf-url: "http://sgi-cnf-service:4288"
-        #    com-url: "http://sgi-com-service:4286"
-        #    eti-url: "http://sgi-eti-service:4280"
-        #   rep-url: "http://sgi-rep-service:4287"
-        #    sgdoc-url: "http://sgi-esb:8080/sgdoc"
+          # sgi:
+          #  web-url: "http://sgi.crue.com"
+          #time-zone: "Europe/Madrid"
+          #rest:
+          #  api:
+          #    cnf-url: "http://sgi-cnf-service:4288"
+          #    com-url: "http://sgi-com-service:4286"
+          #    eti-url: "http://sgi-eti-service:4280"
+          #   rep-url: "http://sgi-rep-service:4287"
+          #    sgdoc-url: "http://sgi-esb:8080/sgdoc"
         #    sgp-url: "http://sgi-esb:8080/sgp"
         #    tp-url: "http://sgi-tp-service:4285"
-      #    sgemp-url: "http://sgi-esb:8080/sgemp"
+        #    sgemp-url: "http://sgi-esb:8080/sgemp"
 spring:
   profiles:
     # Set spring-profile using maven
@@ -105,7 +105,7 @@ spring:
           keycloak:
             issuer-uri: http://demo.hercules-sgi.local/auth/realms/sgi
             user-name-attribute: user_ref_id
-            # issuer-uri: http://sgi-auth:8080/auth/realms/sgi
+          # issuer-uri: http://sgi-auth:8080/auth/realms/sgi
       resourceserver:
         jwt:
           # JSON Web Key endpoint (with the cryptographic key to validate JSON Web Signature)

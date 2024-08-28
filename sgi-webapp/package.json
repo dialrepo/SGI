@@ -3,7 +3,7 @@
   "version": "0.7.0",
   "scripts": {
     "ng": "ng",
-    "start": "node ./generate-config.js && NODE_OPTIONS=--max-old-space-size=4096 && NODE_OPTIONS=--openssl-legacy-provider && ng serve --disable-host-check",
+    "start": "node ./generate-config.js && NODE_OPTIONS=--max-old-space-size=4096 ng serve --disable-host-check",
     "build": "node ./generate-config.js && ng build",
     "build-prod": "node ./generate-config.js && ng build --prod",
     "test": "node ./generate-config.js && NODE_OPTIONS=--max-old-space-size=4096 ng test",

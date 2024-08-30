@@ -1,8 +1,8 @@
 {
   "/api/eti": {
-    "target": "http://sgi-eti-service:4280",
+    "target": "http://demo.hercules-sgi.local:4280",
     "pathRewrite": {
-      "^/api/eti": ""
+      "^/api/eti": "/sgi-sgi-cnf-service"
     },
     "changeOrigin": true,
     "secure": false,

@@ -3,7 +3,7 @@
   "version": "0.7.0",
   "scripts": {
     "ng": "ng",
-    "start": "node ./generate-config.js && NODE_OPTIONS=--max-old-space-size=4096 ng serve --disable-host-check",
+    "start": "node ./generate-config.js && NODE_OPTIONS=--max-old-space-size=4096 && ng serve --disable-host-check",
     "build": "node ./generate-config.js && ng build",
     "build-prod": "node ./generate-config.js && ng build --prod",
     "test": "node ./generate-config.js && NODE_OPTIONS=--max-old-space-size=4096 ng test",
@@ -35,8 +35,7 @@
     "@ngx-formly/schematics": "^5.10.13",
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
-    "@sgi/framework": "file:../sgi-framework-angular/sgi-framework-angular-0.0.0.tgz",
-    "angular-material-components": "file:../angular-material-components/angular-material-components-4.0.0.tgz",
+    "@sgi/framework": "file:../sgi-framework-angular/dist/sgi/framework/sgi-framework-0.1.0.tgz",
     "ckeditor5-custom-build": "file:ckeditor5",
     "fontsource-poppins": "^3.0.3",
     "keycloak-js": "11.0.0",

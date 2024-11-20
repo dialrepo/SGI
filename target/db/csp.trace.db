@@ -1,4 +1,0 @@
-2024-08-28 08:29:08 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "DATABASECHANGELOGLOCK" no encontrada
-Table "DATABASECHANGELOGLOCK" not found; SQL statement:
-SELECT COUNT(*) FROM csp.DATABASECHANGELOGLOCK [42102-200]

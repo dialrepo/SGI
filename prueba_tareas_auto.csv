@@ -1,0 +1,13 @@
+titulo,descripcion,etiquetas
+[HERUM-283] - [ETI] Error guardar solicitud ,"Hola,
+
+al intentar modificar una solicitud existente en producción de [mvp@um.es|mailto:mvp@um.es] que es una investigadora da un error. adjunto logs y pantallazo de error.
+
+La tiene que tner hoy terminada.
+
+!image-2024-07-25-10-28-53-405.png!",Type: Error
+[HERUM-297] - [CSP] Error en la  Generación de listados,"He filtrado por unidad de getsión OPE y hay 412 proyectos que deberian generarse sin problemas pero da error.
+
+ 
+
+!image-2024-10-10-14-05-22-242.png!",Type: Error

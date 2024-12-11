@@ -1,0 +1,59 @@
+titulo,etiquetas,descripcion
+[HERUM-283] - [ETI] Error guardar solicitud ,Type: Error,"Hola,
+
+al intentar modificar una solicitud existente en producción de [mvp@um.es|mailto:mvp@um.es] que es una investigadora da un error. adjunto logs y pantallazo de error.
+
+La tiene que tner hoy terminada.
+
+!image-2024-07-25-10-28-53-405.png!"
+[HERUM-297] - [CSP] Error en la  Generación de listados,Type: Error,"He filtrado por unidad de getsión OPE y hay 412 proyectos que deberian generarse sin problemas pero da error.
+
+ 
+
+!image-2024-10-10-14-05-22-242.png!"
+[HERUM-239] – Soporte al despliegue de versión 20240530,Type: Soporte,"Tarea de soporte al despliegue de versión 20240530
+Remitido por mail
+
+De: Iván Salas Corrales <ivan.salas@treelogic.com>
+Fecha: jueves, 30 de mayo de 2024, 11:57
+Para: OLIVER BOTIAS VEIGA <oliver@um.es>, JORGE CARRILLO LOVA <jorgecl@um.es>, REYES HERNANDEZ-MORA MARTINEZ <reyes@um.es>, JOSE TOMAS PALMA MENDEZ <jtpalma@um.es>, GINES MARTINEZ HERNANDEZ <gines.martinez@ticarum.es>, FRANCISCO JOSE SANCHEZ MUNTO <francisco.sanchez@ticarum.es>
+CC: hercules <hercules@treelogic.com>
+Asunto: Despliegue nueva versión Hércules SGI
+
+Buenos días,
+
+Para actualizar la versión actual instalada (20231023) a la última versión disponible (20240530), es necesario realizar los siguientes cambios en el fichero de configuración:
+
+· Reemplazar el tag de cada uno de los siguientes servicios al indicado:
+
+sgi-cnf-service: 0.5.0
+sgi-com-service: 0.4.0
+sgi-csp-service: 0.5.0
+sgi-esb: 0.5.0-um
+sgi-eti-service: 0.5.0
+sgi-pii-service: 0.4.0
+sgi-prc-service: 0.3.0
+sgi-rep-service: 0.5.0
+sgi-webapp: 0.5.0
+ 
+
+Reemplazar el value de la propiedad SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT de sgi-eti-service por org.crue.hercules.sgi.eti.repository.functions.CustomOracle12cDialect
+Comprobar que el usuario del schema de sgi-eti-service tenga permiso para crear funciones
+ 
+
+Una vez modificada la versión de despliegue, podemos proceder a la actualización de la aplicación ejecutando el siguiente comando (sustituir <namespace> con el nombre del namespace de Kubernetes correspondiente):
+
+helm repo update
+helm upgrade sgi treelogic_helm_nexus_repo/sgi-umbrella --timeout 10m0s --wait --wait-for-jobs --install --namespace <namespace> --version 0.1.46 -f ./values.sgi-dev-um.yaml
+
+Adicionalmente después del despliegue aplicar los cambios descritos en el docx adjunto para no perder los cambios que tenéis hechos sobre la versión anterior en los comunicados, informes y formularios.
+
+El código con todos los cambios de la versión está en https://github.com/HerculesCRUE/SGI  y en el siguiente enlace están las imágenes correspondientes https://hub.docker.com/u/h3rcul3scru3."
+[HERUM-240] – Gestión y seguimiento,Type: Soporte,
+[HERUM-252] – Error en la web de confluence,Type: Error,"Hola,
+
+en el manual de producción cientifica, perfil gestor, no está la págia con documetación. Adjunto foto.
+
+Gracias
+
+ "
